@@ -27,7 +27,7 @@ df <- as_tibble(pm25)
 year_totals <- df %>% group_by(year) %>% summarise(pm25total = sum(Emissions), 
                                                    .groups = "keep")
 # output to png device
-png(filename = "pm25byyear.png")
+png(filename = "q1.png")
 
 # generate the plot
 plot(year_totals$year, year_totals$pm25total, 

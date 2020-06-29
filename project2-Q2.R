@@ -35,7 +35,7 @@ year_totals <- baltimore %>%
   summarise(pm25total = sum(Emissions), .groups = "keep")
 
 # output to png device
-png(filename = "baltimore_by_year.png")
+png(filename = "q2.png")
 
 # generate the plot
 plot(year_totals$year, year_totals$pm25total, 
