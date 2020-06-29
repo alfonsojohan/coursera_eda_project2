@@ -6,3 +6,4 @@
 *.zip
 *.rds
 *.png
+.RDataTmp
